@@ -1,0 +1,96 @@
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+/* theme colors */
+$primary-color: #a974ff;
+$secondary-color: #eef3fc;
+
+/* override bootstrap styles */
+.text-primary {
+  color: $primary-color !important;
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.color-secondary {
+  color: $secondary-color !important;
+}
+
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
+
+.btn-secondary {
+  background-color: $secondary-color !important;
+  border-color: #bebebe !important;
+  color: #333 !important;
+}
+
+.nav-link.active {
+  box-shadow: 0px 1px 6px -5px rgba(0,0,0,0.31);
+  -webkit-box-shadow: 0px 1px 6px -5px rgba(0,0,0,0.31);
+  -moz-box-shadow: 0px 1px 6px -5px rgba(0,0,0,0.31);
+}
+
+.nav-link.active .svg-inline--fa {
+  color: $primary-color !important;
+}
+
+/* general styling rules */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $secondary-color;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-fluid {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-primary {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $primary-color !important;
+}
+
+.border-secondar {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $secondary-color;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rounded-50 {
+  border-radius: 50px;
+}
+
+.mw-150px {
+  max-width: 150px;
+}
+
+// page specific styles
+@import './pages/home/home.scss';
